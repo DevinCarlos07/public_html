@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep in touch</title>
+    <link rel="icon" type="image/x-icon" href="imgs/logo2.png">
+    <link rel="stylesheet" href="themify-icons1/css/themify-icons.css">
+	<link rel="stylesheet" href="akhil.css">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resume.html" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="service.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+</div>
+</section>
+<div class="section-contact" >
+<div id="map" class="map"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="contact-form-card">
+                <h4 class="contact-title">Send a message</h4>
+                <div class="container">
+            <form role="form" id="form1" class="email-form" method="post" action="http://formsubmit.co/Akhilraj20801@gmail.com"onsubmit="return validateform()">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="text-center mt-3">
+                    <button type="submit" onclick="validateform()" id="buttonclr" >Send Message</button></div>
+              </form>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="contact-info-card">
+                <h4 class="contact-title">Get in touch</h4>
+                <div class="row mb-2">
+                    <div class="col-1 pt-1 mr-1">
+                        <i class="ti-mobile icon-md"></i>
+                    </div>
+                    <div class="col-10 ">
+                        <h6 class="d-inline" style="color:black;">Phone : <br> +91 8943514279</h6>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-1 pt-1 mr-1">
+                        <i class="ti-map-alt icon-md"></i>
+                    </div>
+                    <div class="col-10">
+                        <h6 class="d-inline" style="color: black;">Address :<br> Alappuzha in Kerala</h6>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-1 pt-1 mr-1">
+                        <i class="ti-envelope icon-md"></i>
+                    </div>
+                    <div class="col-10">
+                        <h6 class="d-inline" style="color: black;">Email :<br> Akhilraj20801@gmail.com</h6>
+                    </div>
+                </div>
+                <ul class="social-icons pt-4">
+                    <li class="social-item"><a class="social-link text-dark" href="https://www.facebook.com/profile.php?id=100013713935033&mibextid=LQQJ4d"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/__doctor.strange_/"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link text-dark" href="https://github.com/dashboard"><i class="ti-github" aria-hidden="true"></i></a></li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<footer class="footer py-3">
+<div class="container">
+   
+</div>
+<script src="jquery1/jquery-3.4.1.js"></script>
+<script src="bootstrap1/bootstrap.bundle.js"></script>
+<script src="bootstrap1/bootstrap.affix.js"></script>
+<script src="isotope1/isotope.pkgd.js"></script>
+<script src="johndoe.js"></script>
+</body>
+<script type="text/javascript">
+    function validateform(){  
+    var name=document.getElementById("name").value 
+    var text=document.getElementById("text").value 
+    var email=document.getElementById("email").value
+    var emailRegex =  /^[a-z A-Z 0-9 _\-\.]+[@][a-z]+[\.][a-z]{2,3}$/;
+      
+    if (name==null|| name==""){  
+      alert("Name can't be blank");  
+      return false;  
+    }else if(!isNaN(name)){
+    alert(" Invalid Name ");
+    return false;
+    
+
+       }   else if(!email.match(mailformat))
+      {
+        alert("You have entered an invalid email address!");
+        document.form1.email.focus();
+        return false;
+      }  else if(text==""||text==null){  
+        alert("Message null??");  
+        return false;  
+        }
+        else
+      {
+        alert("Form Submitted Successfully");
+      } 
+      
+    }
+document.getElementById("form").addEventListener("submit", function(event) {
+  event.preventDefault(); 
+  validateForm();
+});
+</script>
+</html>
